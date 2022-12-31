@@ -67,6 +67,24 @@ footer {
     height: auto;
   }
 }
+
+/* table stype */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 </style>
 </head>
 <body>
@@ -98,7 +116,21 @@ footer {
   <div id='Project Instruction'>
     <article>
       <h1>Project Instruction</h1>
-      <p> In this project, ...</p>
+      <p> Here is a table of all necessary parts of this project:</p>
+      <table>
+        <tr>
+          <th>Part name</th>
+          <th>QTY</th>
+          <th>Image</th>
+        </tr>
+
+        <tr>
+          <th>Arduino UNO board</th>
+          <th>1</th>
+          <th><img src="media/arduino_UNO.png" alt="" border="3" height="100" width="100" /></th>
+        </tr>
+
+      </table>
     </article>
   </div>
 
