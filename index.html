@@ -1,7 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #505;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 1500px; /* should be changed later */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: disc;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+
+<header>
+  <h2>Tetris</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#Overview">Overview</a></li>
+      <li><a href="#Project Instruction">Project Instruction</a></li>
+      <li><a href="#Development stage">Development stage</a></li>
+      <li><a href="#Troubleshooting">Troubleshooting</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id='Overview'>
+    <article>
+      <h1>Overview</h1>
+      <p>This project is ...</p>
+
+    </article>
+  </div>
+
+  <div id='Project Instruction'>
+    <article>
+      <h1>Project Instruction</h1>
+      <p> In this project, ...</p>
+    </article>
+  </div>
+
+  <div id='Development stage'>
+    <article>
+      <h1>Development stage</h1>
+      <p>From the demo day...</p>
+    </article>
+  </div>
+
+  <div id='Troubleshooting'>
+    <article>
+      <h1>Troubleshooting</h1>
+      <p>From the demo day...</p>
+    </article>
+  </div>
+
+  <div id='Contact'>
+    <article>
+      <h1>Contact</h1>
+      <p>From the demo day...</p>
+    </article>
+  </div>
+
+</section>
+
+
+
+<footer>
+  <p>University of pennsylvania ESE 5190 2022 Fall Final project - team Seedling</p>
+</footer>
+
 </body>
 </html>
