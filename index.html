@@ -23,7 +23,7 @@ header {
 }*/
 
 header{
-  background-image: url("imgae/https://github.com/ESE519SeedlingTetris/ese519seedlingtetris.github.io/blob/main/media/Seedling.jpg");
+  background-image: url("image/https://github.com/ESE519SeedlingTetris/ese519seedlingtetris.github.io/blob/main/media/Seedling.jpg");
   backgrounpadding: 30px;
   text-align: center;
   font-size: 35px;
@@ -273,18 +273,18 @@ tr:nth-child(even) {
     <article>
       <h1>Development stage</h1>
       <p>Here is the very first block diagram from the purposing day: </p>
-      <img src="media/block_diagram.PNG" alt="" border="3" height="500" width="900" class = "center"/>
+      <img src="media/block_diagram.PNG" alt="" border="3" height="500" width="755" class = "center"/>
       <p>
         I started with RP2040 and use MAX7219 as the tetris playground. And build the first version of this project with the ability to create seven different blocks,
         and be able to move and rotate them as they fall from the top of the matrix.
       </p>
       <img src="media/parts.jpg" alt="" border="3" height="300" width="500" class = "center"/>
       <p>The basic block rotate and block creation algorithm was also created back then</p>
-        <img src="media/rotate_diagram.jpeg" alt="" border="3" height="600" width="300" class = "center"/>
+        <img src="media/rotate_diagram.jpeg" alt="" border="3" height="600" width="400" class = "center"/>
       <p>
         Later on, due to the restrictions of MAX7219, I swicthed to adafruit 32*16 LED RGB Pannel to have enough space for the game play. To access that many digital/analog pins,
          arduino UNO is used. Step after step, there's more than one version of the coding, and now the
-         <a href="https://github.com/ESE519SeedlingTetris/ese519seedlingtetris.github.io/tree/main/src">full code</a>
+         <a href="https://github.com/ESE519SeedlingTetris/ese519seedlingtetris.github.io/tree/main/src/tetris">full code</a>
          can perform the following function flawlessly:
          <ul>
            <li>
@@ -308,7 +308,7 @@ tr:nth-child(even) {
               the mutiplies of seven or the one's digit contains seven. When triggered, the drop time would temporarily decrease, and a giant "seven" block would be created as the next
               block to drop, which can't be rotated. The special effect would be gone as long as the player get out of seven.
            </li>
-          <img src="media/hit_seven.gif" alt="" border="3" height="600" width="300" class = "center"/>
+          <img src="media/hit_seven.gif" alt="" border="3" height="600" width="400" class = "center" loop=infinite/>
 
            <li>
             There will be different sound effects for block rotations, movements that hits the boundaries, line erase, hitting the seven, and game over.
