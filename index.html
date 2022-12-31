@@ -267,14 +267,41 @@ tr:nth-child(even) {
       <img src="media/parts.jpg" alt="" border="3" height="300" width="500" class = "center"/>
       <p>The basic block rotate and block creation algorithm was also created back then</p>
         <img src="media/rotate_diagram.jpeg" alt="" border="3" height="600" width="300" class = "center"/>
-      <p>Here's the Mid point demo video created with this set of parts</p>
-      <video> width="500" height="300" autoplay>
-        <source src="media/MVP_demo.MOV" type="video/mov">
-      Your browser does not support the video tag.
-      </video>
       <p>
         Later on, due to the restrictions of MAX7219, I swicthed to adafruit 32*16 LED RGB Pannel to have enough space for the game play. To access that many digital/analog pins,
-         arduino UNO is used.
+         arduino UNO is used. Step after step, there's more than one version of the coding, and now the
+         <a href="https://github.com/ESE519SeedlingTetris/ese519seedlingtetris.github.io/tree/main/src">full code</a>
+         can perform the following function flawlessly:
+         <ul>
+           <li>
+            Tetris game play in a play ground of 10*20 pixels. The L/R movement with joystick can move the block left/right.
+            The Up movement can rotate the block if nothing is blocked the way.
+            The down movement can speed up the drop of the block.
+            The external press button is used to restart the game
+           </li>
+
+           <li>
+            Six different game levels based on current score. As level goes up, the game speed and the score mutiplier also increases. The score will
+            be displayed at the top of the matrix.
+           </li>
+
+           <li>
+            A score mutiplier would be applied if more than two lines are earesed at once. A maximum mutiplier equals 8 times, happens when more than four lines are erased at once.
+           </li>
+
+           <li>
+              There's a special rule called <font face = "Comic sans MS" size =" 5">Don't touch the seven</font>. This is a secret hidden rule that would be trigerred when the score hits
+              the mutiplies of seven or the one's digit contains seven. When triggered, the drop time would temporarily decrease, and a giant "seven" block would be created as the next
+              block to drop, which can't be rotated.
+           </li>
+          <img src="media/hit_seven.gif" alt="" border="3" height="600" width="300" class = "center"/>
+
+           <li>
+            There will be different sound effects for block rotations, movements that hits the boundaries, line erase, hitting the seven, and game over.
+           </li>
+
+
+         </ul>
       </p>
 
     </article>
