@@ -173,6 +173,83 @@ tr:nth-child(even) {
         </tr>
 
       </table>
+      <p>Since there's more than one version of LED matrix avaliable. Those matrix pannel may have different version of connections.
+        Please refer to <a href="https://learn.adafruit.com/32x16-32x32-rgb-led-matrix/new-wiring">This page</a> for your specific
+        pannel. For my case, here's a table of all my connections:
+      </p>
+      <table>
+        <tr>
+          <th>part name</th>
+          <th>part Pin</th>
+          <th>Arduino UNO Pin</th>
+        </tr>
+
+        <tr>
+          <th>joystick</th>
+          <th>VRx</th>
+          <th>A3</th>
+        </tr>
+
+        <tr>
+          <th>joystick</th>
+          <th>VRy</th>
+          <th>A4</th>
+        </tr>
+
+        <tr>
+          <th>passive buzzer</th>
+          <th>Postive leg</th>
+          <th>Pin 11</th>
+        </tr>
+
+        <tr>
+          <th>push button</th>
+          <th>\</th>
+          <th>Pin 12</th>
+        </tr>
+
+        <tr>
+          <th>RGB matrix</th>
+          <th>R1, G1, B1</th>
+          <th>Pin 2,3,4</th>
+        </tr>
+
+        <tr>
+          <th>RGB matrix</th>
+          <th>R2, G2, B2</th>
+          <th>Pin 5,6,7</th>
+        </tr>
+
+        <tr>
+          <th>RGB matrix</th>
+          <th>Row Select A, B, C</th>
+          <th>A0, A1, A2</th>
+        </tr>
+
+        <tr>
+          <th>RGB matrix</th>
+          <th>CLK</th>
+          <th>Pin 8</th>
+        </tr>
+
+        <tr>
+          <th>RGB matrix</th>
+          <th>Output Enable</th>
+          <th>Pin 9</th>
+        </tr>
+
+        <tr>
+          <th>RGB matrix</th>
+          <th>Latch/STB</th>
+          <th>Pin 10</th>
+        </tr>
+
+      </table>
+      <p>
+        All the other pins that are not mentioned here can be ignored. Notice that the pin connections of RGB matrix pannel
+        can be quite tricky. Please refer to <a href="https://learn.adafruit.com/32x16-32x32-rgb-led-matrix/connecting-with-jumper-wires">this page</a>
+        to double check your wiriting if your matrix pannel failed to work as expected.
+      </p>
     </article>
   </div>
 
