@@ -4,6 +4,8 @@
  * panel, controled by joystick.
  * 
  * This file inclueds all global variables.
+ * Author: Shu Xu
+ * Last edited: Dec 16th, 2022
  */
 
 #include <RGBmatrixPanel.h>

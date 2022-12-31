@@ -1,4 +1,7 @@
-// Create a new block
+/* Create a new block
+ *  Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 void create_block(){
   // select block type
   block = random(0, 7);

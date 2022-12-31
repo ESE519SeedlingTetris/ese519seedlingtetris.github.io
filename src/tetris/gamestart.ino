@@ -1,4 +1,8 @@
-// This function starts/restarts the game
+/* This function starts/restarts the game
+ *  Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
+
 void gamestart(){
   new_block = 1;
   // draw tetris gaming area

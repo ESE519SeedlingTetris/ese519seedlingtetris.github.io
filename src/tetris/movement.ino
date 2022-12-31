@@ -1,4 +1,7 @@
-// This function moves down a block if ok to do so
+/* This function moves down a block if ok to do so
+ *  Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 int move_down(){
   int check_ok;
   // if it is ok to move down

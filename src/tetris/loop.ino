@@ -1,4 +1,7 @@
-// loop function
+/* Loop function
+ * Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 
 void loop() {
  

@@ -9,6 +9,8 @@
  * p for pink
  * o for orange
  * c for cyan
+ * Author: Shu Xu
+ * Last edited: Dec 16th, 2022
  */
 
 uint16_t color(char select) {

@@ -1,4 +1,7 @@
-// play losing sound effect
+/* play losing sound effect
+ *  Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 void losing_sound(){
   if (lose == 0){
     tone(buzzer_PIN, 2000, 300);

@@ -1,5 +1,7 @@
-// This function displays a score above the tetris
-// gaming area
+/* This function displays a score above the tetris gaming area
+ *  Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 void score(int pt){
   // lv 1 to 6 depending on current points
   if (point >= 20){

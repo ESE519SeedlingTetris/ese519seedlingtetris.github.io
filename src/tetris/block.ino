@@ -1,4 +1,4 @@
-  // ------------------------------------------- block function -------------------------------------------
+// ------------------------------------------- block function -------------------------------------------
 /* block:
  *  0 -- I
  *  1 -- J
@@ -7,7 +7,9 @@
  *  4 -- S
  *  5 -- Z
  *  6 -- T
-*/
+ * Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 
 /*  This function draw or erase a block as needed
  *   block: 0 to 6 to select block type

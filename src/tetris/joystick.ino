@@ -1,5 +1,8 @@
-// This function reads from the joystick pins and return
-// some actions such as move right/left, restart and rotate
+/* This function reads from the joystick pins and return
+ * some actions such as move right/left, restart and rotate
+ * Author: Shu Xu
+ * Last edited: Dec 16th, 2022
+ */
 int joystick_track(int VRx, int VRy, int SW){
   // control delaytime
   unsigned long control_time = 200;
