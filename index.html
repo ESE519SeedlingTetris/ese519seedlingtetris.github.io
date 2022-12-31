@@ -100,7 +100,7 @@ tr:nth-child(even) {
       <li><a href="#Overview">Overview</a></li>
       <li><a href="#Project Instruction">Project Instruction</a></li>
       <li><a href="#Development stage">Development stage</a></li>
-      <li><a href="#Troubleshooting">Troubleshooting</a></li>
+      <li><a href="#Troubleshooting / possible improvement">Troubleshooting / possible improvement</a></li>
       <li><a href="#Contact">Contact</a></li>
     </ul>
   </nav>
@@ -258,15 +258,31 @@ tr:nth-child(even) {
   <div id='Development stage'>
     <article>
       <h1>Development stage</h1>
-      <p>From the demo day...</p>
+      <p>Here is the very first block diagram from the purposing day: </p>
+      <img src="media/block_diagram.jpg" alt="" border="3" height="500" width="900" class = "center"/>
+
     </article>
   </div>
 
-  <div id='Troubleshooting'>
+  <div id='Troubleshooting / possible improvement'>
     <article>
-      <h1>Troubleshooting</h1>
-      <p>From the demo day...</p>
-    </article>
+      <h1>Troubleshooting / possible improvement</h1>
+      <ul id="01">
+        <li>
+          For some reason, the push key on my joystick would occisionaly return arbitary values no matter if it is pressed or not. I have to use a extra push button
+          button as shown above to perform the restart function. It is possible to connect the Button Pin to the SW connection of joystick instead of an external
+          push button to perfrom the same function.
+        </li>
+        <li>
+          The original design includes the theme music of Tetris while playing. I have managed to perfrom the play part and music part seperately. Howeverm the set
+            up function of RGB Matrix somehow may affect the clk rate of buzzer, and twists the rythm badly. Hence this function is not included in this project.
+            Instead, sound effect are played for block rotation, line erasing, and some other operations.
+        </li>
+        <li>
+          The notation of digital cable input can be confusing. All digital Pins should be connected as symmetric as those notations shown on the RGB matrix.
+        </li>
+      </ul>
+      </article>
   </div>
 
   <div id='Contact'>
